@@ -1,0 +1,21 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.question{
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+
+}
+
+.answer{
+    color: #ffffff;
+    font-size: 16px;
+}
+

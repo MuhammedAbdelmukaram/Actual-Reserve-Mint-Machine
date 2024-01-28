@@ -1,0 +1,223 @@
+.App {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.profileImage {
+  width: 560px; /* Adjust as needed */
+}
+
+.mintButton {
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: #7600FF;
+  color: #fff;
+  height: 60px;
+  width: 560px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.greenStuff{
+  display: flex;
+  max-width: 560px;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: flex-end;
+  font-weight: bolder;
+  text-align: left;
+  }
+
+.greenText{
+  color: #fff;
+}
+
+
+.statusDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  animation: pulse 2s infinite;
+}
+
+.online {
+  background-color: #02a402;
+}
+
+.offline {
+  background-color: red;
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contentContainer {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column;
+  padding-left: 16rem;
+  padding-right: 16rem;
+  margin-top: 1.4rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.leftDiv {
+  flex: 4; /* Takes up 3 parts of the available space */
+  padding: 10px; /* Add padding if needed */
+  /* Add other styles as needed */
+}
+
+.verticalLine {
+  margin-top: 10px;
+  width: 1px; /* Width of the line */
+  background-color: #ffffff; /* Color of the line */
+  filter: drop-shadow(0px -2px 12px #FF56F6);
+  /* Adjusted margins to 0 to avoid overflow */
+}
+
+.rightDiv {
+  flex: 3; /* Takes up 2 parts of the available space */
+  padding: 10px; /* Add padding if needed */
+  /* Add other styles as needed */
+}
+
+.containerRight{
+  font-family: 'Orbitron', sans-serif;
+  border-top: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  align-items: flex-start;
+}
+
+/* Assuming this is in a file like styles.css */
+.howSection {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* Style for the FAQ container */
+
+/* Style for the inner div of the FAQ section */
+.faqContent {
+  padding: 0px 30px 30px 30px;
+  margin-top: 30px;
+  margin-left: 100px;
+
+
+}
+
+/* Style for the FAQ title */
+.faqTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.faqContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Media query for screens with a max-width of 1024px */
+@media screen and (max-width: 1124px) {
+  .howSection {
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+.dateSection{
+  display: flex;
+  gap: 1px;
+}
+
+.mintInfo{
+  margin-left: 30px;
+}
+
+.mintInfoTitleMain{
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Ensures overflow text is hidden */
+  text-overflow: ellipsis;
+  min-width: 76px;
+}
+
+
+.mintInfoTitle{
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+.mintInfoValue{
+  font-size: 36px;
+  width: min-content;
+  font-weight: lighter;
+
+}
+
+.mintInfoValueTwo{
+  font-size: 26px;
+  width: max-content;
+  font-weight: lighter;
+
+}
+
+.steps{
+  font-size: 16px;
+  text-shadow: 2px 2px 4px rgba(19, 19, 19, 0.5);
+}
+
+.timeSection{
+  margin-top: 12px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px ;
+  gap: 100px;
+}
+
+@media screen and (max-width: 1344px) {
+  .steps{
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(19, 19, 19, 0.5);
+  }
+  .faqContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
